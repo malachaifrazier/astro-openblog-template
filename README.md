@@ -7,6 +7,7 @@
   ⭐Leave a star if you like this project!⭐️
 </h3>
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/3240f5cc-94e7-4903-97c1-7e54ee38ae8b/deploy-status)](https://app.netlify.com/sites/grand-custard-f7917d/deploys)
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fdanielcgilibert%2Fblog-template)
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/danielcgilibert/blog-template)
 
@@ -90,13 +91,13 @@ git@github.com:danielcgilibert/blog-template.git
 2. Install dependencies:
 
 ```bash
-pnpm install
+npm install
 ```
 
 3. Run the development server:
 
 ```bash
-pnpm dev
+npm dev
 ```
 
 ## 📐 Configure
@@ -171,14 +172,14 @@ All commands are run from the root of the project, from a terminal:
 
 | Command                 | Action                                                                                                                           |
 | :---------------------- | :------------------------------------------------------------------------------------------------------------------------------- |
-| `pnpm install`          | Installs dependencies                                                                                                            |
-| `pnpm run dev`          | Starts local dev server at `localhost:3000`                                                                                      |
-| `pnpm run build`        | Build your production site to `./dist/`                                                                                          |
-| `pnpm run preview`      | Preview your build locally, before deploying                                                                                     |
-| `pnpm run format:check` | Check code format with Prettier                                                                                                  |
-| `pnpm run format`       | Format codes with Prettier                                                                                                       |
-| `pnpm run sync`         | Generates TypeScript types for all Astro modules. [Learn more](https://docs.astro.build/en/reference/cli-reference/#astro-sync). |
-| `pnpm run lint`         | Lint with ESLint                                                                                                                 |
+| `npm install`          | Installs dependencies                                                                                                            |
+| `npm run dev`          | Starts local dev server at `localhost:3000`                                                                                      |
+| `npm run build`        | Build your production site to `./dist/`                                                                                          |
+| `npm run preview`      | Preview your build locally, before deploying                                                                                     |
+| `npm run format:check` | Check code format with Prettier                                                                                                  |
+| `npm run format`       | Format codes with Prettier                                                                                                       |
+| `npm run sync`         | Generates TypeScript types for all Astro modules. [Learn more](https://docs.astro.build/en/reference/cli-reference/#astro-sync). |
+| `npm run lint`         | Lint with ESLint                                                                                                                 |
 
 ## 👋 Contributors
 
