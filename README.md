@@ -27,7 +27,7 @@
 
 ## 💻 Demo
 
-Check out the [Demo](https://blog-template-gray.vercel.app/), hosted on Vercel
+Check out the [Demo](https://grand-custard-f7917d.netlify.app/), hosted on Netlify
 <br/>
 
 
@@ -182,6 +182,8 @@ All commands are run from the root of the project, from a terminal:
 
 ## 👋 Contributors
 
-<a href="https://github.com/danielcgilibert/blog-template/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=danielcgilibert/blog-template" />
+<a href="https://github.com/malachaifrazier/astro-openblog-template/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=malachaifrazier/astro-openblog-template" />
 </a>
+
+Made with [contrib.rocks](https://contrib.rocks).
