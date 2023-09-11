@@ -7,6 +7,7 @@
   ⭐Leave a star if you like this project!⭐️
 </h3>
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/3240f5cc-94e7-4903-97c1-7e54ee38ae8b/deploy-status)](https://app.netlify.com/sites/grand-custard-f7917d/deploys)
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fdanielcgilibert%2Fblog-template)
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/danielcgilibert/blog-template)
 
