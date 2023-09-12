@@ -13,7 +13,7 @@ type Props = {
 }
 
 const { data, readTime, headings } = Astro.props
-const { title, description, pubDate, updatedDate, heroImage, tags } = data
+const { title, description, pubDate, updatedDate, heroImage, tags, author } = data
 
 const articleDate = pubDate.toISOString()
 ---
@@ -22,6 +22,7 @@ const articleDate = pubDate.toISOString()
 	title={title}
 	description={description}
 	image={heroImage?.src}
+  author={author}
 	articleDate={articleDate}>
 	<article class='md:py-4 max-w-xs sm:max-w-none md:max-w-none'>
 		<header class='mb-3 flex flex-col justify-center items-center gap-6'>
@@ -37,6 +38,7 @@ const articleDate = pubDate.toISOString()
 				<h1 class='title text-center text-4xl md:text-6xl md:pb-2.5 font-semibold opacity-0'>
 					{title}
 				</h1>
+        <p class='text-center text-lg text-opacity-75'>By: {author}</p>
 			</div>
 
 			<div class='flex flex-wrap justify-center items-center gap-2 gap-y-4 md:gap-5'>
