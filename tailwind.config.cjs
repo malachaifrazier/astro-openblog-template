@@ -10,6 +10,7 @@ module.exports = {
 				white: '#f8f9fa'
 			},
 			fontFamily: {
+        // mono: ["IBM Plex Mono", "monospace"],
 				body: ['Manrope', ...defaultTheme.fontFamily.sans]
 			},
 			gridTemplateColumns: {
