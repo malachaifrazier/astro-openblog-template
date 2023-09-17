@@ -1,24 +1,24 @@
 {
-	"title": "john-doe",
-	"meta_title": "John Doe",
-	"email": "John-Doe@email.com",
+	"title": "malachai-frazier",
+	"meta_title": "malachai-frazier",
+	"email": "Malachai-Frazier@email.com",
 	"image": "/images/avatar.png",
 	"description": "this is meta description",
 	"social": [
 		{
 			"name": "github",
 			"icon": "FaGithub",
-			"link": "https://github.com"
+			"link": "https://github.com/malachaifrazier"
 		},
 		{
 			"name": "twitter",
 			"icon": "FaTwitter",
-			"link": "https://twitter.com"
+			"link": "https://twitter.com/malcreatesstuff"
 		},
 		{
 			"name": "linkedin",
 			"icon": "FaLinkedin",
-			"link": "https://linkedin.com"
+			"link": "https://linkedin.com/in/malachai-frazier/"
 		}
 	]
 }

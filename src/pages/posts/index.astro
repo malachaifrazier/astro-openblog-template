@@ -7,15 +7,16 @@ import BaseLayout from '@/layouts/BaseLayout'
 import { getPosts } from '@/utils'
 import { sortByDate } from '@/lib/utils/sortFunctions'
 
-const MAX_POSTS = 10 // max number of posts to show on the home page
-const posts = await getPosts(MAX_POSTS)
+// const MAX_POSTS = 10 // max number of posts to show on the home page
+const posts = await getPosts()
 const sortedPosts = sortByDate(posts)
 ---
 
 <BaseLayout title='Home'>
 	<div class='flex justify-start items-center gap-2 title'>
 		<Shape />
-		<h1 class='text-5xl font-semibold tracking-wide'>Blog Title</h1>
+
+		<h1 class='text-5xl font-semibold tracking-wide'>All Posts</h1>
 		<a
 			target='_blank'
 			href='/rss.xml'
@@ -36,28 +37,19 @@ const sortedPosts = sortByDate(posts)
 		</a>
 	</div>
 
-	<section id='hero'>
-		<p>
-			Astro Open Blog is a minimal, responsive, accessible and SEO-friendly Astro blog theme. Light
-			and dark mode are supported by default. Moreover, additional color schemes can also be
-			configured.
-		</p>
-		<p>
-			Read the blog posts or check
-			<LinkButton
-				className='underline underline-offset-4 decoration-dashed'
-				href='https://github.com/malachaifrazier/astro-openblog-template#readme'
-			>
-				README
-			</LinkButton> for more info.
-		</p>
-	</section>
+	<!-- <section id="hero">
+    <div class='flex justify-start items-center gap-2 title'>
+      <h1 class='text-5xl font-semibold tracking-wide'>
+        😌
+      </h1>
+    </div>
+  </section> -->
 
 	<ListCategories />
 
 	<div>
 		<h2 class='text-lg font-medium tracking-wide text-end'>Latest Post</h2>
-		<ListPosts FirstBig={true} posts={posts} />
+		<ListPosts FirstBig={false} posts={posts} />
 	</div>
 </BaseLayout>
 
