@@ -36,7 +36,14 @@ const { posts } = Astro.props
 				)
 			})
 		) : (
-			<span class='text-gray-500'>There are no related posts yet. 😢</span>
+			<h3 font-bold text-lg dark:text-white>
+				😢 There are no related posts yet. We working on that. In the mean time, you can check out
+				our other posts{' '}
+				<a class='font-medium  hover:underline' href='/posts'>
+					HERE
+				</a>
+				.
+			</h3>
 		)
 	}
 </section>

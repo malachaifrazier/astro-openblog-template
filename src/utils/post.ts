@@ -5,10 +5,31 @@ export const getCategories = async () => {
 	const categories = new Set(posts.map((post) => post.data.category))
 	return Array.from(categories)
 }
+// sort posts by date, earliest to latest
+export const sortByDate = (array: any[]) => {
+	const sortedArray = array.sort(
+		(a: any, b: any) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+	)
+	return sortedArray
+}
 
 export const getPosts = async (max?: number) => {
 	return (await getCollection('blog'))
 		.filter((post) => !post.data.draft)
-		.sort((a, b) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf())
+		.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
 		.slice(0, max)
+}
+
+// get all authors
+export const getAuthors = async () => {
+	const posts = await getCollection('blog')
+	const authors = new Set(posts.map((post) => post.data.author))
+	return Array.from(authors)
+}
+
+// get all posts by author
+export const getPostsByAuthor = async (author: string) => {
+	return (await getCollection('blog'))
+		.filter((post) => post.data.author === author)
+		.sort((a, b) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf())
 }

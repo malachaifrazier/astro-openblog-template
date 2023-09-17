@@ -1,7 +1,9 @@
 ---
 import HeaderLink from '@/components/HeaderLink'
 import TwitterIcon from '@/components/icons/TwitterIcon'
+import InstagramIcon from '@/components/icons/InstagramIcon'
 import GithubIcon from '@/components/icons/GithubIcon'
+import LinkedinIcon from '@/components/icons/LinkedinIcon'
 import SunIcon from '@/components/icons/SunIcon'
 import MoonIcon from '@/components/icons/MoonIcon'
 import PageFindSearch from '@/components/Search'
@@ -10,20 +12,39 @@ import PageFindSearch from '@/components/Search'
 const SOCIALNETWORKS = [
 	{
 		name: 'Github',
-		url: 'https://github.com/danielcgilibert/blog-template',
+		url: 'https://github.com/malachaifrazier/',
 		icon: GithubIcon
 	},
 	{
 		name: 'Twitter',
-		url: 'https://github.com/danielcgilibert/blog-template',
+		url: 'https://x.com/malcreatesstuff',
 		icon: TwitterIcon
+	},
+	{
+		name: 'instagram',
+		url: 'https://instagram.com/malcreatesstuff',
+		icon: InstagramIcon
+	},
+	{
+		name: 'linkedin',
+		url: 'https://linkedin.com/in/malachaifrazier',
+		icon: LinkedinIcon
 	}
 ]
+// Todays date Sat 12, January 2021
+const today = new Date().toLocaleDateString('en-US', {
+	weekday: 'short',
+	day: 'numeric',
+	month: 'long',
+	year: 'numeric'
+})
 ---
 
 <header class='flex justify-between items-center h-12 font-semibold'>
-	<a class='text-lg' href='/'>Home</a>
-	<nav class='nav-menu flex justify-center items-center md:flex gap-4'>
+	<a class='text-sm' href='/'>
+		{today}
+	</a>
+	<nav class='nav-menu flex justify-center items-center md:flex gap-2'>
 		{
 			SOCIALNETWORKS.map((network) => (
 				<HeaderLink class='' href={network.url} target='_blank' aria-label={network.name}>
@@ -38,7 +59,8 @@ const SOCIALNETWORKS = [
 					<SunIcon />
 				</span>
 				<span
-					class='moon-logo w-fit h-fit absolute opacity-0 inset-0 transition-transform duration-500'>
+					class='moon-logo w-fit h-fit absolute opacity-0 inset-0 transition-transform duration-500'
+				>
 					<MoonIcon />
 				</span>
 			</span>
