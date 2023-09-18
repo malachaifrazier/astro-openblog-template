@@ -48,22 +48,6 @@
 
 }
 
-.moon-logo {
-	transform: translateY(0%) rotateZ(0deg);
-}
-
-.sun-logo {
-	transform: translateY(0) rotateZ(0deg);
-}
-
-.animate-sun {
-	transform: translateY(20%) rotateZ(100deg);
-}
-
-.animate-moon {
-	transform: translateY(20%) rotateZ(50deg);
-}
-
 .glass {
 	background: rgba(57, 56, 56, 0.52);
 	backdrop-filter: blur(13px) saturate(150%);
@@ -87,12 +71,32 @@
 .wiggle:hover {
   -webkit-animation-name: wiggle;
   -ms-animation-name: wiggle;
+  animation-name: wiggle;
   -ms-animation-duration: 1000ms;
   -webkit-animation-duration: 1000ms;
+  animation-duration: 1000ms;
   -webkit-animation-iteration-count: 1;
   -ms-animation-iteration-count: 1;
+  animation-iteration-count: 1;
   -webkit-animation-timing-function: ease-in-out;
   -ms-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+}
+
+.moon-logo {
+	transform: translateY(0%) rotateZ(0deg);
+}
+
+.sun-logo {
+	transform: translateY(0) rotateZ(0deg);
+}
+
+.animate-sun {
+	transform: translateY(20%) rotateZ(100deg);
+}
+
+.animate-moon {
+	transform: translateY(20%) rotateZ(50deg);
 }
 
 @-webkit-keyframes wiggle {
