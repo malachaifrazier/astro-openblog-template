@@ -5,9 +5,11 @@ import InstagramIcon from '@/components/icons/InstagramIcon'
 import GithubIcon from '@/components/icons/GithubIcon'
 import LinkedinIcon from '@/components/icons/LinkedinIcon'
 import MenuIcon from './icons/MenuIcon.astro'
+import NewsIcon from './icons/NewsIcon.astro'
 import Search from '@/components/Search'
 import TagIcon from './icons/TagIcon.astro'
 import ToggleTheme from './ToggleTheme.astro'
+import CategoryIcon from './icons/CategoryIcon.astro'
 
 // ADD YOUR SOCIAL NETWORKS HERE
 const SOCIALNETWORKS = [
@@ -54,9 +56,12 @@ const today = new Date().toLocaleDateString('en-US', {
 			<div
 				class='flex flex-col gap-4 md:flex-row md:border-r-2 border-black pr-4 dark:border-white'
 			>
-				<HeaderLink href='/tags' class='flex items-center gap-1 text-2xl md:text-base'>
-					<TagIcon /> Tags
-				</HeaderLink>
+				<a href='/tags' rel='prefetch' class='flex items-center gap-1 text-2xl md:text-base'>
+					<span><TagIcon /></span>All Tags
+				</a>
+				<a href='/posts' rel='prefetch' class='flex items-center gap-1 text-2xl md:text-base'>
+					<span><NewsIcon /></span>All Posts
+				</a>
 			</div>
 
 			<div class='flex justify-end gap-3 md:p-0'>
@@ -90,11 +95,10 @@ const today = new Date().toLocaleDateString('en-US', {
 		const isClickInside =
 			menu?.contains(event.target as HTMLDivElement) ||
 			menuButton?.contains(event.target as HTMLButtonElement)
-
 		if (isClickInside) {
 			menu?.classList.toggle('translate-x-96')
 		} else {
-			menu?.classList.add('translate-x-96')
+			menu?.classList.toggle('translate-x-96')
 		}
 	})
 </script>
