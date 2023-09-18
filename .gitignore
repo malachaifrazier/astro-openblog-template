@@ -1,6 +1,6 @@
 # build output
 dist/
-.astro/types.d.ts
+.astro/types.d.ts*
 
 # dependencies
 node_modules/
